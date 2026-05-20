@@ -11,7 +11,7 @@
 
 Quick Start - How It Works - Features - Documentation - Configuration - Troubleshooting - Roadmap
 
-Enterprise RAG Governance Platform is a production-oriented AI architecture portfolio project. It shows how to build a governed internal knowledge assistant where documents are classified, retrieval is access-controlled, answers are grounded with citations, risky prompts are blocked, and compliance users can audit what happened.
+Enterprise RAG Governance Platform is a production-oriented AI architecture project. It shows how to build a governed internal knowledge assistant where documents are classified, retrieval is access-controlled, answers are grounded with citations, risky prompts are blocked, and compliance users can audit what happened.
 
 This is not a simple chatbot. It is a cloud-native reference architecture for enterprise RAG with security, governance, evaluation, cost tracking foundations, and clear architecture documentation.
 
