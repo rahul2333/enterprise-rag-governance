@@ -1,4 +1,15 @@
-import { FileText, LayoutDashboard, LogOut, MessageSquare, ShieldCheck, Upload } from "lucide-react";
+import {
+  ClipboardCheck,
+  FileSearch,
+  FileText,
+  LayoutDashboard,
+  ListChecks,
+  LogOut,
+  MessageSquare,
+  Settings,
+  ShieldAlert,
+  Upload
+} from "lucide-react";
 import { useAuth } from "../hooks/useAuth";
 
 interface LayoutProps {
@@ -12,7 +23,11 @@ const navItems = [
   { id: "chat", label: "Chat", icon: MessageSquare },
   { id: "documents", label: "Documents", icon: FileText },
   { id: "upload", label: "Upload", icon: Upload },
-  { id: "governance", label: "Governance", icon: ShieldCheck }
+  { id: "audit", label: "Audit logs", icon: FileSearch },
+  { id: "evaluations", label: "Evaluations", icon: ClipboardCheck },
+  { id: "review", label: "Review queue", icon: ListChecks },
+  { id: "risks", label: "Risk register", icon: ShieldAlert },
+  { id: "settings", label: "Settings", icon: Settings }
 ];
 
 export function Layout({ activePage, onNavigate, children }: LayoutProps) {

@@ -1,11 +1,15 @@
 import { useState } from "react";
 import { Layout } from "./components/Layout";
 import { useAuth } from "./hooks/useAuth";
+import { AuditLogsPage } from "./pages/AuditLogsPage";
 import { ChatPage } from "./pages/ChatPage";
 import { DashboardPage } from "./pages/DashboardPage";
 import { DocumentLibraryPage } from "./pages/DocumentLibraryPage";
-import { GovernancePage } from "./pages/GovernancePage";
+import { EvaluationDashboardPage } from "./pages/EvaluationDashboardPage";
 import { LoginPage } from "./pages/LoginPage";
+import { ReviewQueuePage } from "./pages/ReviewQueuePage";
+import { RiskRegisterPage } from "./pages/RiskRegisterPage";
+import { SettingsPage } from "./pages/SettingsPage";
 import { UploadPage } from "./pages/UploadPage";
 
 function renderPage(activePage: string) {
@@ -16,8 +20,16 @@ function renderPage(activePage: string) {
       return <DocumentLibraryPage />;
     case "upload":
       return <UploadPage />;
-    case "governance":
-      return <GovernancePage />;
+    case "audit":
+      return <AuditLogsPage />;
+    case "evaluations":
+      return <EvaluationDashboardPage />;
+    case "review":
+      return <ReviewQueuePage />;
+    case "risks":
+      return <RiskRegisterPage />;
+    case "settings":
+      return <SettingsPage />;
     default:
       return <DashboardPage />;
   }

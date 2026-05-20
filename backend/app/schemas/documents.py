@@ -43,3 +43,15 @@ class IngestionJobResponse(BaseModel):
 class DocumentUploadResponse(BaseModel):
     document: DocumentResponse
     ingestion_job: IngestionJobResponse
+
+
+class DocumentChunkResponse(BaseModel):
+    id: int
+    document_id: int
+    chunk_index: int
+    content: str
+    page_number: int | None
+    token_count: int | None
+    embedding_model: str | None
+
+    model_config = {"from_attributes": True}
